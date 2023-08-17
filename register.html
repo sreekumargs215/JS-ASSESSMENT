@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <form id="registrationForm">
+        <input type="text" id="username" placeholder="Username" required><br>
+        <input type="text" id="firstname" placeholder="First Name" equired><br>
+        <input type="text" id="lastname" placeholder="Last Name" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+        <input type="tel" id="mobile" placeholder="Mobile Number" required><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const firstname = document.getElementById("firstname").value;
+            const lastname = document.getElementById("lastname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const mobile = document.getElementById("mobile").value;
+
+            // Basic validations
+
+            const namePattern = /^[A-Za-z]+$/;
+            if (!namePattern.test(firstname) || !namePattern.test(lastname)) {
+                alert("First name and last name must contain only letters.");
+                return;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Invalid email format.");
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            if (username.trim() === "" || firstname.trim() === "" || lastname.trim() === "" || email.trim() === "" || mobile.trim() === "") {
+                alert("Please fill out all fields.");
+                return;
+            }
+
+            const mobilePattern = /^[0-9]{10}$/;
+            if (!mobilePattern.test(mobile)) {
+                alert("Mobile number must be 10 digits.");
+                return;
+            }
+            //<----------------------------------------------------------------------------------->
+
+            // Check if user already exists
+            const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+            const userExists = existingUsers.some(user => user.username === username || user.email === email);
+            if (userExists) {
+                alert("Username or email already exists!");
+                return;
+            }
+
+            // Store user in local storage
+            const newUser = {
+                username,
+                firstname,
+                lastname,
+                email,
+                password,
+                mobile
+            };
+            existingUsers.push(newUser);
+            localStorage.setItem("users", JSON.stringify(existingUsers));
+
+            alert("Registration successful!");
+            window.location.href = "login.html"; // Redirect to login page
+
+
+        });
+    </script>
+</body>
+
+</html>
