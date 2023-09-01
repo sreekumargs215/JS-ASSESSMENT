@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../style.css/dashcss.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="dashboardsection">
+        <h1>Welcome to your Dashboard</h1>
+        <p>You are logged in as: <span id="loggedInUser"></span></p>
+        <p id="productCount"></p>
+        <div class="row">
+            <div class="col-6 view">
+                <a href="./producttab.html">
+                    <button class="btn btn-primary">View Products</button></a>
+
+            </div>
+            <div class="col-6">
+                <button class="btn btn-warning addbutton" id="addProductButton">Add Products</button>
+            </div>
+        </div>
+        <div class="logout mt-5 ms-5">
+            <button class="btn btn-secondary" id="logoutButton">Logout</button>
+        </div>
+    </div>
+
+    <script src="../js/dash.js"></script>
+</body>
+
+</html>

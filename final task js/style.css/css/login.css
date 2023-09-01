@@ -1,0 +1,36 @@
+body {
+    background-image: url(../../style.css/bgimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 16% 30%;
+    padding: 20px 45px;
+    text-align: center;
+    width: 300px;
+    height: 245px;
+    padding: 20px 120px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 80px;
+
+}
+
+button[type="submit"] {
+    background-color: #bbb121;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}

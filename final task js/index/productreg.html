@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Product</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css/productreg.css">
+</head>
+
+<body>
+    <div class="container align-items-evenly">
+        <form id="productForm">
+            <label for="productName">Product Name:</label>
+            <div class="productname">
+
+                <input type="text" id="productName" required><br>
+            </div>
+            <label for="productQuality">Product Quantity:</label>
+            <div class="productquantity">
+
+                <input type="text" id="productQuality" required><br>
+            </div>
+            <label for="mprPrice">MPR Price:</label>
+            <div class="mrpprice">
+
+                <input type="text" step="0.01" id="mprPrice" required><br>
+            </div>
+            <label for="salePrice">Sale Price:</label>
+            <div class="saleprice">
+
+                <input type="text" step="0.01" id="salePrice" required><br>
+            </div>
+
+            <div class="createddate">
+                <input type="hidden" id="createdDate" value="">
+            </div>
+
+            <div class="submitbutton">
+                <button type="submit">Add Product</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="../js/productreg.js">
+
+    </script>
+</body>
+
+</html>

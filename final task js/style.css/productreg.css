@@ -1,0 +1,17 @@
+* {
+    align-content: center;
+    background: url(../images/wallpaperflare.com_wallpaper.jpg);
+    border: 2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+
+
+.form {
+    align-content: center;
+    align-items: center;
+
+}

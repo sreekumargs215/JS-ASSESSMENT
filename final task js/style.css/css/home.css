@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+    background-image: url(../47438.png);
+    background-position: center;
+    background-size: cover;
+    margin: 14% 20%;
+    text-align: center;
+    border: 2px solid rgb(180, 43, 243);
+    border-radius: 15px 15px;
+    box-shadow: #b613df 5px 5px 5px 5px;
+}
+
+h1 {
+    color: #463cd8e1;
+
+}
+
+h1:hover {
+    color: #fc9dd7e1;
+
+}
+
+h3 {
+    color: rgb(81, 42, 255);
+}
+

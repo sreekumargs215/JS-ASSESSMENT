@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css/login.css">
+</head>
+
+<body>
+    <div id="userSection" style="display: none;">
+        <h3 class="mt-5" id="loggedInText"></h3>
+        <h1>Welcome!</h1>
+        <p>You are logged in as <span id="loggedInUser"></span></p>
+        <button class="btn btn-secondary mt-4 ms-4 fs-5" id="logoutButton">Logout</button>
+    </div>
+
+    <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email"><br>
+        <input type="password" id="loginPassword" placeholder="Password"><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="../js/login.js">
+
+    </script>
+</body>
+
+</html>

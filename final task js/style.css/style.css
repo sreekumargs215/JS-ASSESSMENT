@@ -1,0 +1,229 @@
+.bannerbgm {
+
+    background-image: url(../images/bannerbg.png);
+    background-size: cover;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.rema {
+    text-align: center;
+}
+
+.titleh {
+    color: #001F40;
+    font-weight: 500;
+}
+
+.centercon {
+    text-align: center;
+    background: -webkit-linear-gradient(91.43deg,
+            rgb(0, 31, 64) -11.49%,
+            rgb(152, 68, 158) 41.56%,
+            rgb(0, 31, 64) 103.61%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.border-img {
+    position: absolute;
+    top: 510px;
+    bottom: 0;
+    left: 0;
+}
+
+.world {
+    position: absolute;
+    bottom: 0;
+    top: 100px;
+    z-index: -1;
+}
+
+.topcol {
+    padding: 30px;
+}
+
+.kutybox {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.cardpad {
+    z-index: 1;
+    bottom: 0px;
+
+}
+
+.seec {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.hi {
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #001F40;
+}
+
+.bannerbgr {
+    position: absolute;
+    top: 0px;
+    bottom: 100px;
+    z-index: -2;
+    left: 0px;
+}
+
+
+.nav-item {
+    outline-color: #001F40;
+    border-color: aqua;
+}
+
+.card-link {
+    text-decoration: none;
+    text-decoration-color: brown;
+
+}
+
+.card:hover {
+
+    opacity: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(255, 0, 255, 0.8);
+    transition: 0.3s;
+}
+
+.funnn:hover {
+    box-shadow: violet 4px;
+    box-sizing: border-box;
+    border-color: blue;
+
+}
+
+.card-img1 {
+    height: 100px;
+    width: 100px;
+}
+
+.sree {
+    border-radius: 8px;
+    background-color: #bbb;
+    text-decoration-color: brown;
+
+}
+
+.h4text {
+    margin: 5px 10px 50px 0px;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-shadow: #001F40;
+    color: #001F40;
+    vertical-align: middle;
+}
+
+.ptext {
+    font-weight: lighter;
+    border-radius: 4px;
+    text-shadow: #001F40;
+    font-size: smaller;
+    margin: 10px 50px 0px 0px;
+    height: 20px;
+    width: 70px;
+}
+
+
+
+.Topcard {
+    margin-top: 25px;
+    font-size: x-small;
+    border-color: black;
+    vertical-align: top;
+}
+
+.Tophead {
+    margin-top: px;
+    font-size: x-small;
+    padding-top: 20px;
+    border-color: black;
+    vertical-align: bottom;
+}
+
+.Mar_link {
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.footimg {
+    height: 100px;
+    width: 100px;
+}
+
+.footimg {
+    height: 200px;
+    width: 200px;
+}
+
+.banner {
+    margin-top: 0PX;
+    background-image: url(../images/bannerbg.png);
+    position: relative;
+    padding: 250px;
+
+
+}
+
+* {
+    font-family: euclid;
+}
+
+@font-face {
+    font-family: euclid;
+    src: url(../fonts/Euclid-Circular-B-Bold.woff);
+}
+
+.navbar-duble {
+    margin: 0px;
+}
+
+.smallcard {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    border-radius: 150px;
+    -webkit-box-flex: inherit;
+}
+
+.smallcard:hover {
+    box-shadow: 0 8px 16px 0 rgba, (0, 0, 0, 0.5);
+}
+
+.footerlogo {
+    padding: 75px;
+}
+
+
+
+.prefooter {
+    padding: 20px;
+    background-image: url(../images/bannerbg.png);
+    min-height: 200px;
+}
+
+
+
+.prepara2 {
+    margin-top: 75px;
+    border-radius: 8px;
+}
+
+.body {
+    background-color: #ffffff;
+    background-color: #001F40;
+}
